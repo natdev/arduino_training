@@ -31,6 +31,8 @@ void loop() {
     digitalWrite(ledPin_1, LOW);
     }else{
       digitalWrite(ledPin_1, HIGH);
+      Serial.print("D11");
+      Serial.print("\n");
       }
 
       val_2 = digitalRead(inPin_2);
@@ -40,6 +42,8 @@ void loop() {
     }else{
       digitalRead(ledPin_2);
       digitalWrite(ledPin_2, HIGH);
+      Serial.print("D12");
+      Serial.print("\n");
       }
 
       val_3 = digitalRead(inPin_3);
@@ -47,6 +51,7 @@ void loop() {
     digitalWrite(ledPin_3, LOW);
     }else{
       digitalWrite(ledPin_3, HIGH);
-    }     
-
+      Serial.print("D13");
+      Serial.print("\n");
+      }
 }
