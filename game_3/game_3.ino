@@ -1,14 +1,14 @@
 
-int ledPin_1 = 11;
-int inPin_1 = 5;
+int ledPin_1 = 2;
+int inPin_1 = 8;
 int val_1 = 0;
 
-int ledPin_2 = 12;
-int inPin_2 = 6;
+int ledPin_2 = 4;
+int inPin_2 = 9;
 int val_2 = 0;
 
-int ledPin_3 = 13;
-int inPin_3 = 7;
+int ledPin_3 = 6;
+int inPin_3 = 10;
 int val_3 = 0;
 
 void setup() {
@@ -28,25 +28,25 @@ void loop() {
  
   val_1 = digitalRead(inPin_1);
   if(val_1 == HIGH){
-    digitalWrite(ledPin_1, LOW);
+    digitalWrite(ledPin_1, HIGH);
     }else{
-      digitalWrite(ledPin_1, HIGH);
+      digitalWrite(ledPin_1, LOW);
       }
 
       val_2 = digitalRead(inPin_2);
   if(val_2 == HIGH){
-    digitalWrite(ledPin_2, LOW);
+    digitalWrite(ledPin_2, HIGH);
     
     }else{
       digitalRead(ledPin_2);
-      digitalWrite(ledPin_2, HIGH);
+      digitalWrite(ledPin_2, LOW);
       }
 
       val_3 = digitalRead(inPin_3);
   if(val_3 == HIGH){
-    digitalWrite(ledPin_3, LOW);
+    digitalWrite(ledPin_3, HIGH);
     }else{
-      digitalWrite(ledPin_3, HIGH);
+      digitalWrite(ledPin_3, LOW);
     }     
 
 }
