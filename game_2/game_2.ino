@@ -1,21 +1,21 @@
-int brightness = 0;
-int fadeAmount = 18;
-int nbLeds = 14;
-int init = 0;
-void setup() {
-  
+void setup(){
+  pinMode(2,OUTPUT);
+  pinMode(4,OUTPUT);
+  pinMode(6,OUTPUT);
 }
 
-void loop() {
-      
-  pinMode(init,OUTPUT);
-  analogWrite(init, brightness);
-
-  brightness = brightness + fadeAmount;
-  init = init + 1;
-
+void loop(){
   
-  
+  digitalWrite(2, HIGH);
   delay(200);
-
+  digitalWrite(2, LOW);
+  delay(200);
+  digitalWrite(4, HIGH);
+  delay(200);
+  digitalWrite(4, LOW);
+  delay(200);
+  digitalWrite(6, HIGH);
+  delay(200);
+  digitalWrite(6, LOW);
+  delay(200);  
 }
